@@ -1,3 +1,5 @@
+import zintriaIcon from "@/assets/zintria-icon.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
