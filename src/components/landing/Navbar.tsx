@@ -18,9 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-glass">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <a href="#" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="font-display font-bold text-primary-foreground text-sm">Z</span>
-          </div>
+          <img src={zintriaIcon} alt="Zintria" className="w-9 h-9 rounded-full" />
           <span className="font-display font-bold text-xl text-foreground">Zintria</span>
         </a>
 
