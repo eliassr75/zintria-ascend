@@ -6,58 +6,58 @@
 
 @layer base {
   :root {
-    /* Zintria Dark Steel Theme */
-    --background: 220 15% 5%;
-    --foreground: 210 10% 88%;
+    /* Zintria Dark Theme — inspired by product UI */
+    --background: 215 25% 7%;
+    --foreground: 200 15% 93%;
 
-    --card: 215 14% 9%;
-    --card-foreground: 210 10% 88%;
+    --card: 215 22% 11%;
+    --card-foreground: 200 15% 93%;
 
-    --popover: 215 14% 9%;
-    --popover-foreground: 210 10% 88%;
+    --popover: 215 22% 11%;
+    --popover-foreground: 200 15% 93%;
 
-    --primary: 185 45% 42%;
-    --primary-foreground: 220 15% 5%;
+    --primary: 175 70% 45%;
+    --primary-foreground: 215 25% 7%;
 
-    --secondary: 215 12% 13%;
-    --secondary-foreground: 210 10% 75%;
+    --secondary: 215 18% 15%;
+    --secondary-foreground: 200 12% 80%;
 
-    --muted: 215 12% 11%;
-    --muted-foreground: 215 10% 48%;
+    --muted: 215 18% 13%;
+    --muted-foreground: 210 12% 55%;
 
-    --accent: 40 65% 50%;
-    --accent-foreground: 220 15% 5%;
+    --accent: 42 80% 55%;
+    --accent-foreground: 215 25% 7%;
 
-    --destructive: 0 60% 45%;
+    --destructive: 0 65% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 12% 15%;
-    --input: 215 12% 15%;
-    --ring: 185 45% 42%;
+    --border: 215 18% 20%;
+    --input: 215 18% 20%;
+    --ring: 175 70% 45%;
 
     --radius: 0.75rem;
 
     /* Custom Zintria tokens */
-    --glow-primary: 185 45% 42%;
-    --glow-accent: 40 65% 50%;
-    --surface-elevated: 215 14% 10%;
-    --surface-glass: 215 15% 8%;
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 5%) 0%, hsl(215 18% 8%) 50%, hsl(220 15% 6%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(185 45% 42%) 0%, hsl(195 40% 38%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(40 65% 50%) 0%, hsl(30 60% 45%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215 14% 10%) 0%, hsl(215 14% 7%) 100%);
-    --shadow-glow: 0 0 40px -10px hsl(185 45% 42% / 0.25);
-    --shadow-glow-accent: 0 0 40px -10px hsl(40 65% 50% / 0.25);
-    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.6);
+    --glow-primary: 175 70% 45%;
+    --glow-accent: 42 80% 55%;
+    --surface-elevated: 215 22% 13%;
+    --surface-glass: 215 22% 10%;
+    --gradient-hero: linear-gradient(135deg, hsl(215 25% 7%) 0%, hsl(215 28% 11%) 50%, hsl(220 25% 9%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(175 70% 45%) 0%, hsl(190 60% 42%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(42 80% 55%) 0%, hsl(32 75% 48%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 22% 13%) 0%, hsl(215 22% 10%) 100%);
+    --shadow-glow: 0 0 40px -10px hsl(175 70% 45% / 0.3);
+    --shadow-glow-accent: 0 0 40px -10px hsl(42 80% 55% / 0.3);
+    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
 
-    --sidebar-background: 215 14% 7%;
-    --sidebar-foreground: 210 10% 78%;
-    --sidebar-primary: 185 45% 42%;
-    --sidebar-primary-foreground: 220 15% 5%;
-    --sidebar-accent: 215 12% 13%;
-    --sidebar-accent-foreground: 210 10% 78%;
-    --sidebar-border: 215 12% 15%;
-    --sidebar-ring: 185 45% 42%;
+    --sidebar-background: 215 22% 9%;
+    --sidebar-foreground: 200 12% 82%;
+    --sidebar-primary: 175 70% 45%;
+    --sidebar-primary-foreground: 215 25% 7%;
+    --sidebar-accent: 215 18% 15%;
+    --sidebar-accent-foreground: 200 12% 82%;
+    --sidebar-border: 215 18% 20%;
+    --sidebar-ring: 175 70% 45%;
   }
 }
 
