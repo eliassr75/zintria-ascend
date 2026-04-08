@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import zintriaIcon from "@/assets/zintria-icon.png";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Como funciona", href: "#como-funciona" },
   { label: "Para quem", href: "#para-quem" },
   { label: "Diferenciais", href: "#diferenciais" },
@@ -74,8 +75,8 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 pt-2 border-t border-border/50">
-                <Button variant="ghost" size="sm">Entrar</Button>
-                <Button size="sm" className="glow-primary">Começar agora</Button>
+                <Button onClick={() => window.open('https://app.zintria.com.br/login')} variant="ghost" size="sm">Entrar</Button>
+                <Button onClick={() => window.open('https://zintria.etecsystems.com.br/register?context=sao')} size="sm" className="glow-primary">Começar agora</Button>
               </div>
             </div>
           </motion.div>

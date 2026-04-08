@@ -6,12 +6,85 @@
     <title>Zintria — Desafios Gamificados para Engajamento e Desempenho</title>
     <meta name="description" content="Plataforma de desafios gamificados que transforma participação em progresso, engajamento e leitura clara de desempenho. Torres, ranking, score e dados reais." />
     <meta name="author" content="Zintria" />
+    <meta name="theme-color" content="#1a6fc4" />
+    <link rel="canonical" href="https://zintria.com.br/" />
+
+    <!-- ── Favicon & Icons ──────────────────────────────────────── -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ── Open Graph ───────────────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zintria.com.br/" />
+    <meta property="og:site_name" content="Zintria" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content="Zintria — Desafios Gamificados para Engajamento e Desempenho" />
     <meta property="og:description" content="Desafios gamificados que unem engajamento, desenvolvimento de conhecimento e leitura clara de desempenho." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-  </head>
+    <meta property="og:image" content="https://zintria.com.br/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Zintria — Plataforma de Desafios Gamificados" />
 
+    <!-- ── Twitter / X ──────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@zintria" />
+    <meta name="twitter:title" content="Zintria — Desafios Gamificados para Engajamento e Desempenho" />
+    <meta name="twitter:description" content="Desafios gamificados que unem engajamento, desenvolvimento de conhecimento e leitura clara de desempenho." />
+    <meta name="twitter:image" content="https://zintria.com.br/og-image.png" />
+    <meta name="twitter:image:alt" content="Zintria — Plataforma de Desafios Gamificados" />
+
+    <!-- ── Sitemap ───────────────────────────────────────────────── -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- ── JSON-LD Structured Data ──────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://zintria.com.br/#website",
+          "url": "https://zintria.com.br/",
+          "name": "Zintria",
+          "description": "Plataforma de desafios gamificados para engajamento e desenvolvimento de conhecimento.",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://zintria.com.br/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://zintria.com.br/#organization",
+          "name": "Zintria",
+          "url": "https://zintria.com.br/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://zintria.com.br/icon-512.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://zintria.com.br/#webpage",
+          "url": "https://zintria.com.br/",
+          "name": "Zintria — Desafios Gamificados para Engajamento e Desempenho",
+          "description": "Plataforma de desafios gamificados que transforma participação em progresso, engajamento e leitura clara de desempenho. Torres, ranking, score e dados reais.",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://zintria.com.br/#website" },
+          "about": { "@id": "https://zintria.com.br/#organization" },
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://zintria.com.br/og-image.png",
+            "width": 1200,
+            "height": 630
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

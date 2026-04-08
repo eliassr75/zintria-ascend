@@ -9,27 +9,35 @@ import {
 const faqs = [
   {
     q: "O Zintria é só um quiz gamificado?",
-    a: "Não. O Zintria é uma plataforma de desafios com estrutura de torres, progressão, ranking e leitura de desempenho. A gamificação é o motor — o valor está nos dados de domínio, afinidade e engajamento que a plataforma gera.",
+    a: "Não. O Zintria é uma plataforma de desafios com estrutura de torres, progressão por andares, ranking ao vivo e leitura de desempenho. A gamificação é o motor — o valor real está nos dados de domínio, afinidade e engajamento que a plataforma gera automaticamente.",
   },
   {
-    q: "Para quais tipos de organização o Zintria funciona?",
-    a: "Empresas que querem engajar times, instituições de ensino que buscam aprendizado ativo, marcas que desejam experiências interativas e organizadores de eventos que precisam de engajamento digital.",
+    q: "Como funciona o portal exclusivo para empresas?",
+    a: "Cada empresa recebe um subdomínio próprio (ex: suaempresa.zintria.com.br) com identidade visual configurável. Os colaboradores acessam via link ou e-mail e jogam dentro do ambiente da empresa, com dados isolados e relatórios exclusivos.",
   },
   {
     q: "Preciso criar meu próprio conteúdo?",
-    a: "Você pode criar torres com conteúdo 100% personalizado ou utilizar nosso catálogo temático pronto. Também é possível combinar ambos.",
+    a: "Você pode criar torres com conteúdo 100% personalizado ou utilizar nosso catálogo temático pronto. Também é possível combinar ambos — torre com andares de conteúdo próprio mesclados com desafios do catálogo.",
   },
   {
     q: "Como funciona a leitura de desempenho?",
-    a: "Cada interação dentro dos desafios gera dados estruturados. O Zintria mapeia automaticamente domínios, afinidades e lacunas — tudo sem formulários de autoavaliação.",
+    a: "Cada interação dentro dos desafios gera dados estruturados. O Zintria mapeia automaticamente domínios, afinidades e lacunas por colaborador — tudo sem formulários de autoavaliação. Os dados refletem comportamento real em contexto de jogo.",
+  },
+  {
+    q: "Os dados dos colaboradores ficam protegidos?",
+    a: "Sim. A plataforma opera com isolamento de dados por empresa, autenticação por token, e conformidade com as diretrizes da LGPD. Nenhum dado de colaboradores é compartilhado entre empresas ou exposto publicamente sem permissão.",
   },
   {
     q: "Quanto tempo leva para configurar uma torre?",
-    a: "Com o catálogo, minutos. Com conteúdo personalizado, o processo é guiado e intuitivo — a maioria dos criadores lança sua primeira torre no mesmo dia.",
+    a: "Com o catálogo, minutos. Com conteúdo personalizado, o processo é guiado e intuitivo — a maioria dos criadores lança sua primeira torre no mesmo dia. Não é necessário conhecimento técnico.",
+  },
+  {
+    q: "A plataforma integra com sistemas de RH ou LMS?",
+    a: "Atualmente os relatórios são exportáveis em formatos compatíveis com planilhas e sistemas de gestão. Integrações via API estão disponíveis para planos corporativos — entre em contato com nosso time para detalhes.",
   },
   {
     q: "Existe limite de participantes?",
-    a: "A infraestrutura suporta milhares de participantes simultâneos. Escale conforme seu público cresce.",
+    a: "A infraestrutura suporta milhares de participantes simultâneos com ranking ao vivo. Escale conforme seu público cresce — sem degradação de performance.",
   },
 ];
 
@@ -55,12 +63,12 @@ const FAQSection = () => {
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="bg-surface-elevated border border-border rounded-xl px-6 data-[state=open]:glow-primary transition-all"
+                className="bg-surface-elevated border border-border rounded-xl px-6 data-[state=open]:border-primary/30 data-[state=open]:glow-primary transition-all"
               >
-                <AccordionTrigger className="text-left font-display font-semibold hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-display font-semibold hover:no-underline py-5 text-[15px]">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-sm">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>

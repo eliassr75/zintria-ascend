@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import zintriaIcon from "@/assets/zintria-icon.png";
+
+const APP_URL = "https://app.zintria.com.br";
 
 const Footer = () => {
   return (
@@ -16,45 +19,96 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
+          {/* Produto */}
           <div>
             <p className="font-semibold text-sm mb-4">Produto</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Como funciona</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Catálogo</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Preços</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">API</a></li>
+              <li>
+                <a href={APP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Hub
+                </a>
+              </li>
+              <li>
+                <a href={`${APP_URL}/desafios/categorias`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Categorias
+                </a>
+              </li>
+              <li>
+                <a href={`${APP_URL}/desafios/torres`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Torres
+                </a>
+              </li>
+              <li>
+                <a href={`${APP_URL}/desafios/metricas`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Métricas
+                </a>
+              </li>
+              <li>
+                <a href={`${APP_URL}/desafios/ranking`} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                  Ranking Global
+                </a>
+              </li>
             </ul>
           </div>
 
+          {/* Recursos */}
           <div>
             <p className="font-semibold text-sm mb-4">Recursos</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Central de ajuda</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Casos de uso</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Contato</a></li>
+              <li>
+                <a
+                  href="https://wa.me/5554993276132"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  Central de ajuda
+                </a>
+              </li>
+              <li>
+                <Link to="/casos-de-uso" className="hover:text-foreground transition-colors">
+                  Casos de uso
+                </Link>
+              </li>
+              <li>
+                <Link to="/contato" className="hover:text-foreground transition-colors">
+                  Contato
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Legal */}
           <div>
             <p className="font-semibold text-sm mb-4">Legal</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Termos de uso</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Privacidade</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Cookies</a></li>
+              <li>
+                <Link to="/termos" className="hover:text-foreground transition-colors">
+                  Termos de uso
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacidade" className="hover:text-foreground transition-colors">
+                  Privacidade
+                </Link>
+              </li>
+              <li>
+                <Link to="/cookies" className="hover:text-foreground transition-colors">
+                  Cookies
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Zintria. Todos os direitos reservados.
+            © {new Date().getFullYear()} Zintria · EtecSystems. Todos os direitos reservados.
           </p>
           <div className="flex gap-4 text-muted-foreground text-xs">
-            <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-foreground transition-colors">Instagram</a>
-            <a href="#" className="hover:text-foreground transition-colors">X (Twitter)</a>
+            <a href="https://etecsystems.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+              EtecSystems
+            </a>
           </div>
         </div>
       </div>

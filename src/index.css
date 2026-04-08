@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,58 +6,51 @@
 
 @layer base {
   :root {
-    /* Zintria Dark Theme — inspired by product UI */
-    --background: 215 25% 7%;
-    --foreground: 200 15% 93%;
+    /* Zintria Dark Theme — aligned with game identity */
+    --background: 222 20% 10%;
+    --foreground: 215 20% 92%;
 
-    --card: 215 22% 11%;
-    --card-foreground: 200 15% 93%;
+    --card: 222 18% 13%;
+    --card-foreground: 215 20% 92%;
 
-    --popover: 215 22% 11%;
-    --popover-foreground: 200 15% 93%;
+    --popover: 222 18% 13%;
+    --popover-foreground: 215 20% 92%;
 
-    --primary: 175 70% 45%;
-    --primary-foreground: 215 25% 7%;
+    /* Primary: SAO Blue — matches game's oklch(0.696 0.135 257.83) */
+    --primary: 217 65% 58%;
+    --primary-foreground: 222 20% 10%;
 
-    --secondary: 215 18% 15%;
-    --secondary-foreground: 200 12% 80%;
+    --secondary: 222 15% 17%;
+    --secondary-foreground: 215 16% 78%;
 
-    --muted: 215 18% 13%;
-    --muted-foreground: 210 12% 55%;
+    --muted: 222 15% 15%;
+    --muted-foreground: 215 12% 52%;
 
-    --accent: 42 80% 55%;
-    --accent-foreground: 215 25% 7%;
+    /* Accent: Amber/Gold — SAO achievement & ranking color */
+    --accent: 43 88% 58%;
+    --accent-foreground: 222 20% 10%;
 
     --destructive: 0 65% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 18% 20%;
-    --input: 215 18% 20%;
-    --ring: 175 70% 45%;
+    --border: 222 15% 22%;
+    --input: 222 15% 22%;
+    --ring: 217 65% 58%;
 
     --radius: 0.75rem;
 
     /* Custom Zintria tokens */
-    --glow-primary: 175 70% 45%;
-    --glow-accent: 42 80% 55%;
-    --surface-elevated: 215 22% 13%;
-    --surface-glass: 215 22% 10%;
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 7%) 0%, hsl(215 28% 11%) 50%, hsl(220 25% 9%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(175 70% 45%) 0%, hsl(190 60% 42%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(42 80% 55%) 0%, hsl(32 75% 48%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215 22% 13%) 0%, hsl(215 22% 10%) 100%);
-    --shadow-glow: 0 0 40px -10px hsl(175 70% 45% / 0.3);
-    --shadow-glow-accent: 0 0 40px -10px hsl(42 80% 55% / 0.3);
-    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
-
-    --sidebar-background: 215 22% 9%;
-    --sidebar-foreground: 200 12% 82%;
-    --sidebar-primary: 175 70% 45%;
-    --sidebar-primary-foreground: 215 25% 7%;
-    --sidebar-accent: 215 18% 15%;
-    --sidebar-accent-foreground: 200 12% 82%;
-    --sidebar-border: 215 18% 20%;
-    --sidebar-ring: 175 70% 45%;
+    --glow-primary: 217 65% 58%;
+    --glow-accent: 43 88% 58%;
+    --surface-elevated: 222 18% 15%;
+    --surface-glass: 222 18% 11%;
+    --gradient-hero: linear-gradient(135deg, hsl(222 20% 10%) 0%, hsl(225 22% 13%) 50%, hsl(220 20% 10%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(217 65% 58%) 0%, hsl(210 75% 50%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(43 88% 58%) 0%, hsl(35 85% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 18% 15%) 0%, hsl(222 18% 11%) 100%);
+    --shadow-glow: 0 0 40px -10px hsl(217 65% 58% / 0.35);
+    --shadow-glow-accent: 0 0 40px -10px hsl(43 88% 58% / 0.35);
+    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.6);
   }
 }
 
@@ -104,5 +97,24 @@
 
   .shadow-elevated {
     box-shadow: var(--shadow-elevated);
+  }
+
+  /* SAO-style hex grid overlay */
+  .bg-hex-grid {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Scanline effect for SAO aesthetic */
+  .bg-scanlines {
+    background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 0% / 0.015) 2px,
+      hsl(0 0% 0% / 0.015) 4px
+    );
   }
 }
