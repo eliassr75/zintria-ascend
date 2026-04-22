@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Rounded square background — matches iOS/Android app icon spec -->
+  <rect width="512" height="512" rx="112" fill="#030816"/>
+
+  <!--
+    Z mark — scale=0.65 → rendered 384×429
+    tx=(512−384)/2=64  ty=(512−429)/2=42
+  -->
+  <g transform="translate(64 42) scale(0.65)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+    <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+  </g>
+</svg>

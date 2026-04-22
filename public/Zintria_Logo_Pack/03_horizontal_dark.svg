@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="640" viewBox="0 0 2200 640">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#27324A" stroke-width="1" stroke-opacity="0.20"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2200" height="640" fill="#030816"/>
+  <rect width="2200" height="640" fill="url(#grid)"/>
+
+  <!--
+    Z mark — scale=0.727 → rendered 429×480
+    Conteúdo total: 1375px | canvas: 2200px
+    tx = (2200−1375)/2 = 412 → conteúdo centrado horizontalmente ✓
+    ty = (640−480)/2 = 80  → mark centrado verticalmente ✓
+  -->
+  <g transform="translate(412 80) scale(0.727)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+    <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+  </g>
+
+  <!-- Vertical separator — alinhado com o mark (y: 80–560) -->
+  <line x1="891" y1="80" x2="891" y2="560"
+        stroke="#16C7F3" stroke-width="1.5" stroke-opacity="0.50"/>
+
+  <!-- Wordmark — baseline y=399 → optical center = canvas center y=320 ✓ -->
+  <text x="941" y="399"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="220" font-weight="800" letter-spacing="-3">
+    <tspan fill="#16C7F3">Z</tspan><tspan fill="#F4F6F8">INTRIA</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="941" y="461"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="38" font-weight="400" letter-spacing="1"
+        fill="#6F7B95">DESAFIO · DOMÍNIO · ASCENSÃO</text>
+</svg>

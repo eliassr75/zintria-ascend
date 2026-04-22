@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#27324A" stroke-width="1" stroke-opacity="0.20"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="#030816"/>
+  <rect width="1000" height="1000" fill="url(#grid)"/>
+
+  <!--
+    Z mark — normalized viewport 590×660
+    Top bar:       x=70  y=0   w=460 h=110  (main)
+    Top cap:       x=530 y=0   w=60  h=110  (accent, top-right)
+    Diagonal:      polygon 0,490 → 90,590 → 590,200 → 500,100  (main)
+    Bottom cap:    x=70  y=550 w=50  h=110  (accent, bottom-left)
+    Bottom bar:    x=120 y=550 w=460 h=110  (main)
+
+    scale=0.909 → rendered 536×600
+    tx=(1000−536)/2=232  ty=(1000−600)/2=200
+  -->
+  <g transform="translate(232 200) scale(0.909)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+    <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+  </g>
+</svg>

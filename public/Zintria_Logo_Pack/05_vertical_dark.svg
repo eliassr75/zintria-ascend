@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1060" viewBox="0 0 900 1060">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#27324A" stroke-width="1" stroke-opacity="0.20"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="1060" fill="#030816"/>
+  <rect width="900" height="1060" fill="url(#grid)"/>
+
+  <!--
+    Z mark — scale=0.90 → rendered 531×594
+    tx=(900−531)/2=184  ty=105
+    Content block vertically centered: top=105, bottom=955, padding=105 each ✓
+  -->
+  <g transform="translate(184 117) scale(0.90)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+    <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+  </g>
+
+  <!-- Horizontal separator — short cyan rule, 44px below mark bottom (699) -->
+  <line x1="330" y1="755" x2="570" y2="755"
+        stroke="#16C7F3" stroke-width="2" stroke-opacity="0.70"/>
+
+  <!--
+    Wordmark — centered at x=450
+    font-size=148, cap=107px
+    top of text = sep(743)+25 = 768, baseline = 768+107 = 875
+  -->
+  <text x="450" y="887" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="148" font-weight="800" letter-spacing="-2">
+    <tspan fill="#16C7F3">Z</tspan><tspan fill="#F4F6F8">INTRIA</tspan>
+  </text>
+
+  <!-- Tagline — centered, 50px below wordmark baseline -->
+  <text x="450" y="937" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="30" font-weight="400" letter-spacing="1"
+        fill="#6F7B95">DESAFIO · DOMÍNIO · ASCENSÃO</text>
+</svg>

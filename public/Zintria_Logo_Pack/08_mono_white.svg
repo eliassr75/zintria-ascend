@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <!-- Background — pure dark, no grid for clean monochrome use -->
+  <rect width="1000" height="1000" fill="#030816"/>
+
+  <!-- Z mark — single color white, no accent caps -->
+  <g transform="translate(232 200) scale(0.909)">
+    <rect x="70"  y="0"   width="520" height="110" fill="#F4F6F8"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+    <rect x="70"  y="550" width="510" height="110" fill="#F4F6F8"/>
+  </g>
+</svg>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import zintriaIcon from "@/assets/zintria-icon.png";
 
 const APP_URL = "https://app.zintria.com.br";
 
@@ -11,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={zintriaIcon} alt="Zintria" className="w-8 h-8 rounded-full" />
+              <img src="/05-circle.png" alt="Zintria" className="w-8 h-8 rounded-full" />
               <span className="font-display font-bold text-lg">Zintria</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

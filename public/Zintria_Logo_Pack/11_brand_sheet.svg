@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1800" viewBox="0 0 2400 1800">
+  <defs>
+    <!-- Z mark — normalized 590×660 — two color variants -->
+    <g id="z-cyan-dark">
+      <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+      <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+      <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+      <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+      <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+    </g>
+    <g id="z-cyan-light">
+      <rect x="70"  y="0"   width="460" height="110" fill="#020814"/>
+      <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+      <polygon points="0,490 90,590 590,200 500,100"  fill="#020814"/>
+      <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+      <rect x="120" y="550" width="460" height="110" fill="#020814"/>
+    </g>
+    <g id="z-amber-dark">
+      <rect x="70"  y="0"   width="460" height="110" fill="#F4F6F8"/>
+      <rect x="530" y="0"   width="60"  height="110" fill="#F5A623"/>
+      <polygon points="0,490 90,590 590,200 500,100"  fill="#F4F6F8"/>
+      <rect x="70"  y="550" width="50"  height="110" fill="#F5A623"/>
+      <rect x="120" y="550" width="460" height="110" fill="#F4F6F8"/>
+    </g>
+    <g id="z-mono-dark">
+      <rect x="70"  y="0"   width="520" height="110" fill="#020814"/>
+      <polygon points="0,490 90,590 590,200 500,100"  fill="#020814"/>
+      <rect x="70"  y="550" width="510" height="110" fill="#020814"/>
+    </g>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#27324A" stroke-width="1" stroke-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <!-- Sheet background -->
+  <rect width="2400" height="1800" fill="#030816"/>
+  <rect width="2400" height="1800" fill="url(#grid)"/>
+
+  <!-- Sheet title -->
+  <text x="120" y="96"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="46" font-weight="700" fill="#F4F6F8">ZINTRIA · IDENTIDADE VISUAL OFICIAL</text>
+
+  <!-- ═══════════════════════════════════════════════════
+       ROW 1 — Symbol variants (3 tiles, y: 130–570)
+  ═══════════════════════════════════════════════════ -->
+
+  <!-- Tile 1A: Ciano Escuro -->
+  <rect x="80"   y="130" width="680" height="440" rx="24" fill="#030816" stroke="#1E2A40" stroke-width="1"/>
+  <use href="#z-cyan-dark"  transform="translate(152 186) scale(0.62)"/>
+  <text x="420" y="615" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">ciano escuro</text>
+
+  <!-- Tile 1B: Ciano Claro -->
+  <rect x="860"  y="130" width="680" height="440" rx="24" fill="#E9EBF0"/>
+  <use href="#z-cyan-light" transform="translate(934 186) scale(0.62)"/>
+  <text x="1200" y="615" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">ciano claro</text>
+
+  <!-- Tile 1C: Acento Âmbar -->
+  <rect x="1640" y="130" width="680" height="440" rx="24" fill="#030816" stroke="#1E2A40" stroke-width="1"/>
+  <use href="#z-amber-dark" transform="translate(1714 186) scale(0.62)"/>
+  <text x="1980" y="615" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">acento âmbar</text>
+
+  <!-- ═══════════════════════════════════════════════════
+       ROW 2 — Horizontal logo (full width, y: 660–980)
+  ═══════════════════════════════════════════════════ -->
+  <rect x="80" y="660" width="2240" height="320" rx="24" fill="#030816" stroke="#1E2A40" stroke-width="1"/>
+
+  <!-- Mark inside horizontal tile: scale=0.34, mark height=660×0.34=224, ty=(320−224)/2=48 -->
+  <use href="#z-cyan-dark" transform="translate(130 708) scale(0.34)"/>
+
+  <!-- Separator -->
+  <line x1="335" y1="690" x2="335" y2="960"
+        stroke="#16C7F3" stroke-width="1.5" stroke-opacity="0.50"/>
+
+  <!-- Wordmark -->
+  <text x="360" y="870"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="110" font-weight="800" letter-spacing="-2">
+    <tspan fill="#16C7F3">Z</tspan><tspan fill="#F4F6F8">INTRIA</tspan>
+  </text>
+  <text x="360" y="930"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="24" font-weight="400" letter-spacing="1"
+        fill="#6F7B95">DESAFIO · DOMÍNIO · ASCENSÃO</text>
+
+  <text x="1200" y="1020" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">horizontal escuro</text>
+
+  <!-- ═══════════════════════════════════════════════════
+       ROW 3 — App icon + Monochrome (y: 1060–1560)
+  ═══════════════════════════════════════════════════ -->
+
+  <!-- Tile 3A: Ícone do App -->
+  <rect x="80"   y="1060" width="680" height="500" rx="24" fill="#1A1A2A"/>
+  <!-- Inner rounded icon: x:200–640, y:1110–1550 (centered in tile) -->
+  <rect x="200"  y="1110" width="440" height="440" rx="80"  fill="#030816"/>
+  <!--
+    Z inside icon: scale=0.41, rendered 242×271
+    tx = (200+440/2) − 590×0.41/2 = 420 − 121 = 299
+    ty = (1110+440/2) − 660×0.41/2 = 1330 − 135 = 1195
+  -->
+  <use href="#z-cyan-dark" transform="translate(299 1195) scale(0.41)"/>
+  <text x="420" y="1620" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">ícone do app</text>
+
+  <!-- Tile 3B: Monocromático -->
+  <rect x="860"  y="1060" width="680" height="500" rx="24" fill="#F8F9FA"/>
+  <use href="#z-mono-dark" transform="translate(936 1120) scale(0.62)"/>
+  <text x="1200" y="1620" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">monocromático</text>
+
+  <!-- Tile 3C: Color palette swatches -->
+  <rect x="1640" y="1060" width="680" height="500" rx="24" fill="#0D1525"/>
+  <text x="1980" y="1125" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" font-weight="700" fill="#F4F6F8">PALETA DE CORES</text>
+
+  <!-- Swatches -->
+  <rect x="1680" y="1155" width="120" height="80" rx="12" fill="#030816"/>
+  <text x="1740" y="1270" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="20" fill="#6F7B95">#030816</text>
+  <text x="1740" y="1294" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="18" fill="#6F7B95">fundo escuro</text>
+
+  <rect x="1820" y="1155" width="120" height="80" rx="12" fill="#E9EBF0"/>
+  <text x="1880" y="1270" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="20" fill="#6F7B95">#E9EBF0</text>
+  <text x="1880" y="1294" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="18" fill="#6F7B95">fundo claro</text>
+
+  <rect x="1960" y="1155" width="120" height="80" rx="12" fill="#16C7F3"/>
+  <text x="2020" y="1270" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="20" fill="#6F7B95">#16C7F3</text>
+  <text x="2020" y="1294" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="18" fill="#6F7B95">ciano</text>
+
+  <rect x="2100" y="1155" width="120" height="80" rx="12" fill="#F5A623"/>
+  <text x="2160" y="1270" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="20" fill="#6F7B95">#F5A623</text>
+  <text x="2160" y="1294" text-anchor="middle" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="18" fill="#6F7B95">âmbar</text>
+
+  <!-- Brand values -->
+  <text x="1980" y="1380" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="800" letter-spacing="-1" fill="#F4F6F8">DESAFIO</text>
+  <text x="1980" y="1430" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="800" letter-spacing="-1" fill="#F4F6F8">DOMÍNIO</text>
+  <text x="1980" y="1480" text-anchor="middle"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="800" letter-spacing="-1" fill="#F4F6F8">ASCENSÃO</text>
+
+  <text x="1640" y="1620" text-anchor="start"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="28" fill="#6F7B95">referência</text>
+</svg>

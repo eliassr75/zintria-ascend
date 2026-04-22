@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="800" viewBox="0 0 2200 800">
+  <rect width="2200" height="800" fill="#030816"></rect>
+
+  <g transform="translate(20 16) scale(0.80)">
+    <rect x="240" y="150" width="460" height="110" fill="#F4F6F8"></rect>
+    <rect x="700" y="150" width="50" height="110" fill="#16C7F3"></rect>
+    <polygon points="170,640 260,740 760,350 670,250" fill="#F4F6F8"></polygon>
+    <rect x="240" y="700" width="50" height="110" fill="#16C7F3"></rect>
+    <rect x="290" y="700" width="460" height="110" fill="#F4F6F8"></rect>
+  </g>
+
+  <text x="820" y="493" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="260" font-weight="800" letter-spacing="-10" fill="#16C7F3">Z</text>
+  <text x="960" y="493" font-family="Inter, Montserrat, Arial, Helvetica, sans-serif" font-size="260" font-weight="800" letter-spacing="-10" fill="#F4F6F8">INTRIA</text>
+</svg>

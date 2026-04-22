@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#B0B6C8" stroke-width="1" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="#E9EBF0"/>
+  <rect width="1000" height="1000" fill="url(#grid)"/>
+
+  <!-- Z mark — amber accent on light bg -->
+  <g transform="translate(232 200) scale(0.909)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#020814"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#F5A623"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#020814"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#F5A623"/>
+    <rect x="120" y="550" width="460" height="110" fill="#020814"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="640" viewBox="0 0 2200 640">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#B0B6C8" stroke-width="1" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2200" height="640" fill="#E9EBF0"/>
+  <rect width="2200" height="640" fill="url(#grid)"/>
+
+  <!-- Z mark — dark on light bg, mesmas posições do dark ✓ -->
+  <g transform="translate(412 80) scale(0.727)">
+    <rect x="70"  y="0"   width="460" height="110" fill="#020814"/>
+    <rect x="530" y="0"   width="60"  height="110" fill="#16C7F3"/>
+    <polygon points="0,490 90,590 590,200 500,100"  fill="#020814"/>
+    <rect x="70"  y="550" width="50"  height="110" fill="#16C7F3"/>
+    <rect x="120" y="550" width="460" height="110" fill="#020814"/>
+  </g>
+
+  <!-- Vertical separator -->
+  <line x1="891" y1="80" x2="891" y2="560"
+        stroke="#16C7F3" stroke-width="1.5" stroke-opacity="0.60"/>
+
+  <!-- Wordmark — Z cyan + INTRIA dark -->
+  <text x="941" y="399"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="220" font-weight="800" letter-spacing="-3">
+    <tspan fill="#16C7F3">Z</tspan><tspan fill="#020814">INTRIA</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="941" y="461"
+        font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+        font-size="38" font-weight="400" letter-spacing="1"
+        fill="#5D6780">DESAFIO · DOMÍNIO · ASCENSÃO</text>
+</svg>
